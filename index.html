@@ -20,8 +20,8 @@
 	var ws = new WebSocket("ws://127.0.0.1:5678/"),messages = document.createElement('ul');
 	ws.onmessage = function (event) {
 		date = new Date(Date.now())
-		document.getElementById("demo1").innerHTML = date.toISOString(); 
-		document.getElementById("demo").innerHTML = '__________Data= '+event.data;
+		//document.getElementById("demo1").innerHTML = date.toISOString(); 
+		//document.getElementById("demo").innerHTML = '__________Data= '+event.data;
 		sendWebsocketData(event.data);
 		
 	};	
